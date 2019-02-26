@@ -165,8 +165,6 @@ legend {
 }
 textarea {
   overflow: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 [type="checkbox"],
 [type="radio"] {
