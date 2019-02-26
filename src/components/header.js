@@ -1,13 +1,13 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `lightblue`,
       marginBottom: `1.45rem`,
+      props: `headerText`,
     }}
+
   >
     <div
       style={{
@@ -16,27 +16,14 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
+      <h1 style={{ margin: 0,
+            color: `black`,
             textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+            textAlign: `center`,
+      }}> Welcome to the Palindrome Detector
       </h1>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
