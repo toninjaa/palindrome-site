@@ -4,6 +4,17 @@
   "description": "A simple app to tell whether text is a palindrome",
   "version": "0.1.0",
   "author": "@toninjaa",
+  "engines": {
+    "node": "10.10.0"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/node.js"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ],
   "dependencies": {
     "express": "^4.16.4",
     "gatsby": "^2.1.18",
@@ -27,14 +38,6 @@
   "peerDependencies": {
     "graphql": "^0.12.0 || ^0.13.0 || ^14.0.0"
   },
-  "buildpacks": [
-    {
-      "url": "heroku/node.js"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-static"
-    }
-  ],
   "keywords": [
     "gatsby"
   ],
