@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import cat from "../images/cat.jpg"
 import SEO from "../components/seo"
 
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
