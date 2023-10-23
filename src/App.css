@@ -5,3 +5,11 @@ body {
   font-family: Arial;
   text-align: center;
 }
+
+button {
+  position: 50%;
+}
+
+div {
+  text-align: center;
+}

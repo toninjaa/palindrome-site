@@ -22,7 +22,9 @@ function App() {
       <div>
         <form onSubmit={handleSubmit}>
           <textarea value={val} onChange={handleChange} />
-          <button type="submit">Palindrome?</button>
+          <div>
+            <button type="submit">Palindrome?</button>
+          </div>
         </form>
       </div>
     </>
